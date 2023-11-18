@@ -1,0 +1,208 @@
+.wallet-details {
+    min-height: 90vh;
+}
+.wd-header-image {
+    min-height: 60vh;
+    max-width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    background-position: center !important;
+}
+.wallet-warning {
+    color:red;
+    font-size:12px;
+    margin-left: 11px;
+}
+.wallet-address-confirm {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    margin: 75px 0;
+    position: relative;
+    z-index: 1000;
+}
+.wallet-address-confirm > h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height, or 120% */
+    margin-bottom: 42px;
+    /* color: #0b3a6a; */
+}
+.wallet-address-items {
+    background: #ffffff;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 48px 48px 48px 48px;
+    box-shadow: 1px 2px 30px 0px #00000017;
+    width: 40vw;
+    height: 315px;
+}
+.wallet-address-items > h3 {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    margin-bottom: 32px;
+    color: #f7941d;
+}
+.wallet-address-items-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.wallet-address-items-input > label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+
+    /* Neutrals & Text/neutral600 */
+
+    color: #848f9f;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.wallet-address-items-input > input {
+    /* Neutrals & Text/neutral200 */
+
+    background: #f3f5f6;
+    border-radius: 4px;
+    border: 0px;
+    /* Inside Auto Layout */
+    height: 40px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+}
+.wallet-address-items-input > input::placeholder { 
+    color: #8080808a !important;
+}
+.wallet-update-btn {
+    background: linear-gradient(90deg, #f7941d 5.93%, #f15a22 89.95%);
+    border: 1px solid #f15a22;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #ffffff;
+}
+.scan-wallet-btn {
+    height: 52px;
+    border: 1px solid #1e428c;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 18px;
+
+    color: #272e35;
+}
+.scan-wallet-btn > fas {
+    padding: 0 20px;
+}
+
+.wallet-asterik {
+    color: #dc4437;
+    padding-left: 2px;
+}
+
+@media only screen and (max-width: 1292px) {
+    .wallet-details {
+        margin-top: 0px !important;
+    }
+    .wallet-address-items {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .wallet-details {
+        margin-top: 0px !important;
+    }
+    .wallet-address-items {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 792px) {
+    .wallet-details {
+        margin-top: 0px !important;
+    }
+    .wallet-address-items {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 492px) {
+    .wallet-details {
+        margin-top: 0px !important;
+        min-height: 50vh;
+    }
+    .wallet-address-confirm {
+        margin-top: 0px !important;
+        
+    }
+    .wallet-address-items {
+        width: 94%;
+        padding: 15px;
+    }
+    .wallet-address-confirm > h2 {
+        text-align: center;
+        font-size:22px;
+        margin-bottom:10px;
+
+    }
+    .wallet-address-items {
+        width: 90%;
+        padding: 20px 30px;
+        height: 230px;
+    }
+    .scan-wallet-btn {
+        font-size:16px;
+        margin-top:0;
+        height: 38px;
+    }
+}

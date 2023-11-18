@@ -1,0 +1,415 @@
+.pay-now-details {
+    margin-top: 220px;
+    min-height: 90vh;
+}
+.dropin-container-hide {
+    display: none;
+}
+.dropin-container-show {
+    display: block;
+    top: 0;
+    min-height: 100vh;
+    width: 100vw;
+    z-index: 1055002 !important;
+    background-color: #00000052;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1055002 !important;
+    background-color: #00000052;
+}
+.dropin-parent {
+    width: 380px;
+}
+.wd-header-image {
+    /* min-height: 520px; */
+    max-width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    background-position: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.wd-header-image > h2,
+.wd-header-image > h3 {
+    display: none;
+}
+.pay-now-confirm {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    margin: 75px 0;
+}
+.pay-now-confirm > h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height, or 120% */
+    margin-bottom: 42px;
+    color: #0b3a6a;
+    text-align: center;
+}
+
+.pay-now-container {
+    background: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 4px 4px 4px 4px; */
+    /* margin:48px 48px 80px 48px; */
+    box-shadow: 1px 2px 30px 0px #00000017;
+    width: 40vw;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+    margin:30px auto;
+}
+.pay-now-tabs {
+    display: flex;
+    flex-direction: row;
+    background-color: #f3f5f6;
+    border-radius: 16px 16px 0px 0px;
+    /* justify-content: space-around; */
+}
+.pay-now-tabs > div {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    padding: 20px 0;
+    color: #5f738c;
+    width: 50%;
+    text-align: center;
+}
+.pay-now-tabs > div:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.p-wallet-address-items-input {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0;
+}
+.p-wallet-address-items-input > label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #848f9f;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.pay-now-tab-content {
+    padding: 42px;
+}
+.p-wallet-address-items-input > input {
+    /* Neutrals & Text/neutral200 */
+
+    background: #f3f5f6;
+    border-radius: 4px;
+    border: 0px;
+    /* Inside Auto Layout */
+    height: 40px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.content-crypto {
+    display: none;
+}
+.active-content {
+    display: block;
+}
+.active-tab {
+    background: #ffffff;
+    border-radius: 16px 16px 0px 0px;
+}
+.copy-icon {
+    position: relative;
+    /* right: 100%; */
+    left: 93%;
+    top: 26px;
+}
+.copy-icon:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.p-wallet-address-items-get-token {
+    display: flex;
+}
+.p-wallet-address-items-get-token > div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+.get-token {
+    width: 70%;
+    margin: 0 13px;
+}
+.get-token-coin {
+    width: 22%;
+}
+
+.get-token > input,
+.get-token-coin > input {
+    /* Neutrals & Text/neutral200 */
+
+    background: #f3f5f6;
+    border-radius: 4px;
+    border: 0px;
+    /* Inside Auto Layout */
+    height: 40px;
+    /* flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.get-token > label,
+.get-token-coin > label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #848f9f;
+    /* flex: none;
+    order: 0;
+    flex-grow: 0; */
+    /* margin: 0px 10px; */
+}
+
+.warn-info {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    letter-spacing: 0.01em;
+    background: rgba(255, 238, 80, 0.3);
+    border-radius: 10px;
+    padding: 10px 15px 10px 40px;
+    color: #919191;
+}
+
+.wallet-buy-btn {
+    background: linear-gradient(90deg, #f7941d 5.93%, #f15a22 89.95%);
+    border: 1px solid #f15a22;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.wallet_added {
+    margin-top: 14px;
+    color: #12129e;
+    font-size: 12px;
+}
+.pay_cancel {
+    background: white;
+    border: 1px solid #f15a22;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #f15a22;
+    margin-top: 20px;
+}
+/* fiat currency pay tab */
+.fiat-pay {
+    margin-bottom: 34px;
+}
+.fiat-pay > form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 30px;
+}
+.fiat-pay-input-a > label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+
+    /* Neutrals & Text/neutral600 */
+    margin-bottom: 4px;
+    color: #848f9f;
+}
+.fiat-pay-input-a > label > span {
+    color: #dc4437;
+}
+.fiat-pay-input-a > input {
+    background: #f3f5f6;
+    border-radius: 4px;
+    border: 0px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    width: 99%;
+}
+.fiat-pay-input-a > input::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4px;
+
+    /* Neutrals & Text/neutral800 */
+
+    color: #4e5a6c;
+}
+.special-placeholder::placeholder {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.4px;
+
+    /* Neutrals & Text/neutral800 */
+
+    color: #4e5a6c;
+}
+.fiat-pay-input-b {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1292px) {
+    .pay-now-container {
+        width: 60vw !important;
+    }
+    .wd-header-image {
+        background-size: 130%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .pay-now-container {
+        width: 70vw;
+    }
+    .wd-header-image {
+        background-size: 160%;
+        min-height: 390px;
+    }
+}
+@media only screen and (max-width: 792px) {
+    .pay-now-container {
+        width: 94% !important;
+    }
+    .wd-header-image {
+        height: 230px;
+    }
+    .dropin-parent {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 492px) {
+    .fiat-pay-input-a > input {
+        margin-right: 0 !important;
+    }
+    .dropin-parent {
+        width: 380px;
+    }
+    .pay-now-confirm {
+        margin: 0;
+    }
+    .pay-now-details {
+        margin-top: 126px;
+    }
+    .pay-now-tab-content {
+        padding: 20px 12px;
+    }
+    .fiat-pay > form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wd-header-image > h2 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 27px;
+        /* or 112% */
+
+        letter-spacing: -0.01em;
+        display: block;
+        color: #ffffff;
+    }
+    .wd-header-image > h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+        display: block;
+        color: #ffffff;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .dropin-parent {
+        width: 340px;
+    }
+}

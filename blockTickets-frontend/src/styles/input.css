@@ -1,0 +1,70 @@
+.textarea {
+  padding: 6px !important;
+  background: #2b2b2b !important;
+  color: white !important;
+  border: 1px solid #b1b1b1 !important;
+  border-radius: 6px !important;
+}
+.textarea,
+.MuiInputBase-input {
+  width: 100% !important;
+  /* background-color: white !important; */
+}
+.css-p51h6s-MuiInputBase-input-MuiOutlinedInput-input {
+  height: 12.5px !important;
+  border: 1px solid #b1b1b1 !important;
+}
+.textarea,
+.MuiInputLabel-root {
+  color: #b1b1b1 !important;
+}
+#bootstrap-input {
+  /* background-color: black !important; */
+  color: white !important;
+  border: 1px solid #b1b1b1 !important;
+  border-radius: 6px !important;
+}
+.MuiSelect-select {
+  background: #2b2b2b !important;
+}
+.textarea:focus,
+#bootstrap-input:focus,
+.MuiInputBase-input:focus {
+  box-shadow: rgb(250 100 100 / 25%) 0 0 0 0.2rem !important;
+  border-color: rgb(250, 100, 0) !important;
+  border: 1px solid rgb(250, 100, 0) !important;
+}
+
+/* select fields */
+.MuiOutlinedInput-notchedOutline {
+  border-color: #fa6400 !important;
+  border-width: 0px !important;
+}
+.select__input:focus {
+  outline: 0px !important;
+}
+.basic-single {
+  height: 44.6px !important;
+}
+.css-1s2u09g-control,
+.select__control {
+  height: 100% !important;
+  background-color: #2b2b2b !important;
+}
+.select__control:hover {
+  border-color: #fa6400 !important;
+  box-shadow: rgb(250 100 100 / 25%) 0 0 0 0.2rem !important;
+}
+.select__single-value {
+  color: white !important;
+}
+.select__menu {
+  z-index: 10000 !important;
+}
+
+#react-select-2-listbox {
+  background-color: white !important;
+}
+#react-select-3-listbox {
+  z-index: 10000 !important;
+}

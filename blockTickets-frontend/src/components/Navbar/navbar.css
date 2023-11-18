@@ -1,0 +1,122 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 12px);
+  height: 80px;
+  background-color: transparent;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+}
+#searchLogo:hover {
+  cursor: pointer;
+  color: #f27749;
+}
+
+.avatar--image {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+
+nav.active {
+  background-color: #f6f6f6;
+}
+.navbar {
+  position: fixed !important;
+}
+/* .css-yz9k0d-MuiInputBase-input {
+    background: white !important;
+} */
+#searchKey {
+  border-radius: 8px !important;
+  border: 0px !important;
+}
+
+@media only screen and (max-width: 1292px) {
+  nav {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav {
+    height: 76px !important;
+  }
+  .nav-bottom-category {
+    top: 75px;
+    height: 38px;
+  }
+}
+
+@media only screen and (max-width: 792px) {
+  nav {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-bottom-category {
+    width: 100%;
+  }
+  .navbar-collapse {
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 504px) {
+  nav {
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 70px !important;
+  }
+  .navbar-brand > a > img {
+    height: 50px;
+  }
+  .navLeftExplore {
+    background-color: #5f738c;
+    color: white;
+    position: absolute;
+    display: block;
+    top: 108px;
+    left: 0px;
+    z-index: 100;
+    width: 134px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .navbar > .container {
+    padding: 0 !important;
+  }
+
+  .navbar-brand {
+    margin: 0;
+  }
+
+  .navbar-collapse {
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 394px) {
+  .navbar-toggler {
+    padding: 2px !important;
+    margin-right: 5px !important;
+  }
+  .navbar-collapse {
+    background-color: #f6f6f6 !important;
+  }
+
+  .navbar > .container-md {
+    padding: 4px !important;
+  }
+  .dropdown-toggle {
+    padding: 0px !important;
+    margin-left: 5px !important;
+  }
+  .dropdown-menu.show {
+    left: -92px !important;
+    top: 33px !important;
+  }
+}

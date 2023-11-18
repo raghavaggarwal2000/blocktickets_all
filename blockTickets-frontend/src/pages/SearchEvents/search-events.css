@@ -1,0 +1,23 @@
+.search-events {
+  min-height:750px;
+  margin-top:160px;
+}
+.search-events >h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: #0b3a6a;
+  margin-bottom:50px;
+}
+
+.search-events >h2 > i{color:#f15a22;}
+.eventCardSearch {
+  display: flex;
+  justify-content: center;
+}
+.eventCardSearch{
+  margin:40px 0;
+}

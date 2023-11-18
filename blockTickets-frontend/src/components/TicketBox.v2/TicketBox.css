@@ -1,0 +1,166 @@
+.quantityInput {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 2px solid #979797;
+}
+
+.red-bottom {
+  color: #f06262;
+}
+.redDark-bottom {
+  color: #501b1b;
+}
+.silver-bottom {
+  color: #72706e;
+}
+.gold-bottom {
+  color: #e18e2a;
+}
+.platinum-bottom {
+  color: #f7e7d4;
+}
+/* general */
+.red-linear-gradient {
+  background-image: linear-gradient(
+    148deg,
+    #320302 0%,
+    #681512 47%,
+    #f06262 100%
+  );
+}
+/* vip */
+.dark-red-linear-gradient {
+  background-image: linear-gradient(
+    to right bottom,
+    #320302,
+    #340706,
+    #360b0b,
+    #390e0f,
+    #3b1212,
+    #3a1313,
+    #391414,
+    #381515,
+    #341314,
+    #2f1212,
+    #2b1111,
+    #270f0f
+  );
+}
+/* silver */
+.gray-linear-gradient {
+  background-image: linear-gradient(
+    to right bottom,
+    #a78e8d,
+    #9d8985,
+    #92837e,
+    #887e79,
+    #7e7874,
+    #857f7a,
+    #8b8580,
+    #928c86,
+    #aaa299,
+    #c4b8ac,
+    #ddcfc0,
+    #f7e7d4
+  );
+}
+/* gold  */
+.gold-linear-gradient {
+  background-image: linear-gradient(
+    148deg,
+    #392804 0%,
+    #e3952b 51%,
+    #e18e2a 100%
+  );
+}
+/* platinum */
+.platinum-linear-gradient {
+  background-image: linear-gradient(
+    to right bottom,
+    #3a3a39,
+    #30302f,
+    #272625,
+    #1d1c1c,
+    #141313,
+    #211e1e,
+    #2e2a2a,
+    #3c3636,
+    #685d5b,
+    #978882,
+    #c7b6aa,
+    #f7e7d4
+  );
+}
+
+.dropin-container-hide {
+  display: none;
+}
+.dropin-container-show {
+  /* display: block; */
+  top: 0;
+  min-height: 100vh !important;
+  width: 100vw;
+  z-index: 1055002 !important;
+  background-color: #00000052;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1055002 !important;
+  background-color: #00000052;
+}
+
+.stripe-container-hide {
+  display: none;
+}
+.stripe-container-show {
+  /* display: block; */
+  top: 0;
+  left: 0;
+  min-height: 100vh !important;
+  width: 100vw;
+  z-index: 1055002 !important;
+  background-color: #00000052;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropin-parent {
+  width: 380px !important;
+  overflow: auto !important;
+}
+
+.undiscountedPrice {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
+}
+.overline {
+  width: 100px;
+  border-top: 2px solid black;
+}
+@media only screen and (max-width: 1024px) {
+  .dropin-parent {
+    height: 76vh;
+  }
+  .dropin-container-show {
+    min-height: 90vh !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dropin-parent {
+    height: 75vh;
+  }
+  .dropin-container-show {
+    min-height: 90vh !important;
+  }
+}
+.verticalBorder {
+  width: 1px !important;
+  height: 100%;
+  /* dashed border */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23979797FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='11' stroke-linecap='square'/%3e%3c/svg%3e");
+}

@@ -1,0 +1,144 @@
+.modal-body > .loading {
+  height: 40vh;
+  z-index: 199999;
+  /* position: absolute; */
+}
+
+.modal__body {
+  z-index: 199999;
+  position: absolute;
+  max-height: 198px;
+  overflow-y: scroll;
+}
+
+.bid-input-price {
+  margin-top: 10px;
+  height: 38px;
+  width: 100%;
+  background: #ffffff;
+  color: black !important;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 6px;
+}
+.bidPriceInput {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.currencySelect {
+  margin: 10px 10px 0 0;
+  height: 38px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 6px;
+}
+.priceConvert {
+  font-size: 14px;
+  float: right;
+  color: #312727e0;
+}
+/* .bid-input-price::placeholder {
+  color:red !important;
+} */
+.btn-modal {
+  color: #f15a22 !important;
+  background: white !important;
+  border: 1px solid #f15a22 !important;
+}
+.phone-btn-element {
+  display: flex;
+  flex-direction: row;
+}
+.otp-separator {
+  color: #e3e6e9;
+}
+.btn-modal-continue {
+  background: linear-gradient(90deg, #f7941d 5.93%, #f15a22 89.95%);
+  border: 1px solid #f15a22;
+}
+.modal__walletInfo > ol > li {
+  font-size: 14px;
+  font-weight: 600;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+.deleteWallet {
+  margin-left: 14px;
+}
+.modal__walletInfo > ol > li:hover {
+  cursor: pointer;
+  color: #f15a22;
+}
+.pay-type-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+.pay-type-btn > div {
+  border: 1px solid #f15a22;
+  color: #f15a22;
+  padding: 6px 10px;
+  margin: 10px 0;
+  transition: all 0.2s ease-in-out;
+  width: 190px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.pay-type-btn > div:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, #f7941d 5.93%, #f15a22 89.95%);
+  border: 1px solid #f15a22;
+  color: white;
+}
+.pay-metamask {
+  height: 26px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+.card-img {
+  width: 26px !important;
+  height: 26px !important;
+  margin-right: 4px;
+}
+.pay-using-stripe {
+  border: 1px solid #f15a22;
+  color: #f15a22;
+  padding: 6px 10px;
+  transition: all 0.2s ease-in-out;
+  background: white;
+  width: 190px;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.pay-using-stripe:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, #f7941d 5.93%, #f15a22 89.95%);
+  border: 1px solid #f15a22;
+  color: white;
+}
+
+.getPhoneNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.getPhoneNumber > * {
+  margin: 10px 0;
+}
+
+.modalFooter2 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}

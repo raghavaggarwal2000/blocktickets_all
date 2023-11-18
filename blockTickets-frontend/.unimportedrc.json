@@ -1,0 +1,30 @@
+{
+  "ignoreUnresolved": [],
+  "ignoreUnused": [
+    "@alch/alchemy-web3",
+    "@emotion/style",
+    "@metamask/detect-provider",
+    "@stripe/react-stripe-js",
+    "@testing-library/jest-dom",
+    "@testing-library/react",
+    "@testing-library/user-event",
+    "dotenv",
+    "path-browserify",
+    "react-google-map-picker",
+    "react-icons",
+    "react-password-checklist",
+    "react-router-bootstrap",
+    "react-scripts",
+    "react-slick",
+    "react-stripe-checkout",
+    "use-query",
+    "validator",
+    "walletconnect",
+    "web-vitals"
+  ],
+  "ignoreUnimported": [
+    "src/components/EventCard/EventCard.jsx",
+    "src/components/Pagination/Pagination.jsx",
+    "src/utils/Geolocation.js"
+  ]
+}

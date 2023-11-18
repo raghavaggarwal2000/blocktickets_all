@@ -1,0 +1,76 @@
+.movie-trailerIframe {
+  width: 1140px;
+  height: 315px;
+}
+
+.youtubeIframe {
+  width: 100%;
+  height: 450px;
+}
+
+@media screen and (max-width: 876px) {
+  .youtubeIframe {
+    width: 80vw;
+    height: calc(80vw * 0.5625);
+  }
+
+  .movie-trailerIframe {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .movie-trailerIframe {
+    width: 360px;
+  }
+}
+
+.one-line {
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fa6400 !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fa6400 !important;
+}
+
+.pagination-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-pagination {
+  display: none !important;
+}
+@media only screen and (max-width: 782px) {
+  .MuiTypography-h2 {
+    font-size: 21px !important;
+  }
+  .swiper-pagination {
+    display: block !important;
+  }
+}
+.mobileHide {
+  display: grid !important;
+}
+.desktopHide {
+  display: none !important;
+}
+@media only screen and (max-width: 792px) {
+  .mobileHide {
+    display: none !important;
+  }
+  .desktopHide {
+    display: block !important;
+  }
+  .swiper-wrapper {
+    margin: 30px 0 !important;
+  }
+}

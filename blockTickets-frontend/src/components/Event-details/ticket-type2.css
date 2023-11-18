@@ -1,0 +1,610 @@
+.ticket-slider {
+    width: 100%;
+    height:610px;
+    margin-top:120px;
+    background: #f6f6f6;
+    /* position: absolute; */
+    /* top: 0vh; */
+}
+.slick-track {
+    height: 610px;
+}
+.ticket-type-2 {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    max-height: 556px;
+    padding: 40px;
+}
+
+.tick-type-1 {
+    grid-area: 1 / 1 / 4 / 2;
+    background: #0b3a6a;
+    opacity: 0.9;
+    border-radius: 8px;
+    padding: 32px 0 0 36px;
+}
+.tick-type-1 > h2 {
+    margin-bottom: 20px;
+}
+.tick-type-1 > h3 {
+    margin-bottom: 40px !important;
+}
+.tick-type-1 > h1 {
+    margin-bottom: 20px;
+}
+.tick-type-1 > p {
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+.tick-type-2 {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tick-type-2 > div {
+    display: flex;
+    flex-direction: row;
+}
+.tick-type-2a {
+    width: 54px;
+    height: 30px;
+    color: white;
+    background: #fbbc04;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 13px;
+    line-height: 12px;
+}
+.tick-type-2b {
+    width: 120px;
+    height: 30px;
+    color: #0b3a6a;
+    background: #e5e5e5;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+}
+.tick-type-2c {
+    width: 72px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b3a6a;
+    border-radius: 4px;
+}
+.tick-type-3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #fad702;
+    padding: 20px;
+    background: #fad702;
+    box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+.ttt-m-3a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 12px;
+    /* or 67% */
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #0b3a6a;
+}
+.evt-bbtt-arrow {
+    display: flex;
+}
+.ttt-m-3b {
+    background: #0b3a6a;
+    border-radius: 4px 0px 4px 4px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.ttt-m-3ba {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    /* or 100% */
+    padding: 10px;
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+.ttt-m-3ba > div {
+    margin-bottom: 12px;
+}
+.ttt-m-3ba-d {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 12px;
+    /* or 60% */
+
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+.ttt-m-3bb {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px !important;
+    line-height: 12px;
+    /* or 60% */
+    background-color: white;
+    width: 15%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.ttt-m-3bb > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ttt-m-3bb > div > span {
+    color: #0b3a6a;
+    padding-top: 4px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 12px;
+    /* or 80% */
+
+    letter-spacing: -0.01em;
+
+    color: #0b3a6a;
+}
+.tick-type-4 {
+    grid-area: 3 / 2 / 4 / 3;
+    background: #0b3a6a;
+    opacity: 0.9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.tick-type-1 > h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height, or 112% */
+
+    letter-spacing: 0.01em;
+
+    color: #ffffff;
+}
+.tick-type-1 > h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height, or 150% */
+
+    color: #ffffff;
+}
+.tick-type-1 > h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 34px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+}
+.tick-type-1 > p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    /* or 169% */
+
+    color: #ffffff;
+}
+
+.tick-type-3-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+}
+.tick-type-3-bottom-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.tick-type-3-bottom-1 > div {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+.tick-type-3-bottom > div > input {
+    width: 100%;
+    height: 34px;
+    border-radius: 4px !important;
+    /* padding-left:90px; */
+}
+.tick-type-3-bottom > div > input::placeholder {
+    padding-left:10px;
+}
+.tick-type-3-bottom > div > input:focus {
+    padding-left:10px;
+}
+
+.tick-block-box {
+    background: #ffffff !important;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    justify-content: flex-end;
+    color: #787878 !important;
+}
+.tt3b-box {
+    width: 146px;
+    height: 34px;
+    font-family: Montserrat;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 17px !important;
+    /* identical to box height */
+    color: #787878 !important;
+    background: #ffffff;
+    border-radius: 4px !important;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 0px;
+    padding: 20 90px;
+    padding-right: 20px;
+}
+
+.tick-type-3-bottom-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.tick-type-3-bottom-2 > div {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+.tick-type-3-bottom-3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.tick-type-3-bottom-3 > div {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+.tick-type-3-bottom-4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.tick-type-3-bottom-4 > div {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+.tick-type-3-bottom-5 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+.tick-type-3-bottom-5 > div {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+.tick-type-3-bottom-6 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+.tick-type-3-bottom-6 > div {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+.tick-type-3-bottom-7 {
+    grid-area: 4 / 1 / 5 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tick-type-3-bottom-7 > button {
+    padding: 10px 0px;
+    background: linear-gradient(90deg, #f7941d 5.93%, #f15a22 89.95%);
+    border: 1px solid #f15a22;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 50%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #ffffff;
+}
+.tick-type-3-bottom-7 > button:hover {
+    cursor: pointer;
+}
+@media only screen and(min-width:792px) {
+    .event-details {
+        background-size: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .ticket-type-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .tick-type-1 > h2 {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+    .ticket-type-2 {
+        padding: 20px 8px;
+    }
+    .tick-type-1 > h3 {
+        font-size: 16px;
+        margin-bottom: 30px !important;
+    }
+    .tick-type-1 > h1 {
+        font-size: 30px;
+        margin-bottom: 30px !important;
+    }
+    .ttt-m-3bb > div > span {
+        font-size:13px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .ticket-type-2 {
+        grid-template-columns: 1fr 1fr;
+        /* height:90vh; */
+        grid-column-gap: 15px;
+        grid-row-gap: 10px;
+    }
+    .tick-type-1 > h2 {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    .tick-type-1 > h3 {
+        font-size: 16px;
+        margin-bottom: 28px !important;
+    }
+    
+
+    .tick-type-3 {
+        padding:10px;
+        height: 112px;
+    }
+
+    .ttt-m-3a {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 8px;
+        margin-bottom: 0;
+    }
+    .ttt-m-3bb > div > span { 
+        font-size:12px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .ticket-type-2 {
+        display: grid;
+grid-template-columns: 1fr;
+grid-template-rows:0.4fr repeat(2, 1fr);
+grid-column-gap: px;
+grid-row-gap: 10px;
+    }
+    .tick-type-1 {
+        padding:30px;
+        grid-area: 1 / 1 / 2 / 2 !important; 
+    }
+    .tick-type-1 {
+        padding: 10px;
+    }
+    .tick-type-1 > h2 {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    .tick-type-1 > h3 {
+        font-size: 12px;
+        margin-bottom: 4px !important;
+    }
+    .tick-type-1 > h1 {
+        font-size: 14px;
+        margin-bottom: 4px !important;
+    }
+    .tick-type-1 > p {
+        margin-bottom: 4px;
+        font-size: 11px;
+line-height: 18px;
+    } 
+    
+    .tick-type-2{
+        display:none !important;
+    }
+    .tick-type-3 {
+        padding:10px;
+        height: 112px;
+        grid-area: 2 / 1 / 3 / 2; 
+    }
+    .tick-type-4 {
+        grid-area: 3 / 1 / 4 / 2;  
+    }
+     .ttt-m-3a {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 8px;
+        margin-bottom: 0;
+    }
+    .ttt-m-3bb > div > span { 
+        font-size:12px;
+    }
+    .tick-type-1 > p {
+        font-size:13px;
+    }
+    .tick-type-3 {
+        margin: 0 20px;
+    }
+    .tick-type-4 {
+        margin: 0 20px;
+        padding: 10px 12px;
+    }
+    .tick-type-3-bottom > div > input {
+        width: 100%;
+        height: 30px;}
+        .tick-type-3-bottom-7 > div {
+            padding: 7px 10px;
+            }
+}
+@media only screen and (max-width:484px) {
+    .ticket-type-2 {
+        padding: 20px;
+        grid-template-rows: 0.4fr 0.2fr 0.6fr !important;
+    }
+    .tick-type-1 {
+        padding: 10px;
+    }
+    .tick-type-1 > h2 {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    .tick-type-1 > h3 {
+        font-size: 12px;
+        margin-bottom: 4px !important;
+    }
+    .tick-type-1 > h1 {
+        font-size: 14px;
+        margin-bottom: 4px !important;
+    }
+    .tick-type-1 > p {
+        margin-bottom: 4px;
+        font-size: 11px;
+line-height: 18px;
+    } 
+    .tick-type-3 {
+        margin: 0 20px;
+    }
+    .tick-type-4 {
+        margin: 0 20px;
+        padding: 10px 12px;
+    }
+    .tick-type-3-bottom > div > input {
+        width: 100%;
+        height: 30px;}
+        .tick-type-3-bottom-7 > div {
+            padding: 7px 10px;
+            }
+}
+
+@media only screen and (max-width:368px) {
+    .ticket-type-2 {
+        padding: 20px;
+        height: 90vh;
+    }
+    .tick-type-1 {
+        padding: 10px;
+    }
+    .tick-type-1 > h2 {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    .tick-type-1 > h3 {
+        font-size: 12px;
+        margin-bottom: 4px !important;
+    }
+    .tick-type-1 > h1 {
+        font-size: 14px;
+        margin-bottom: 4px !important;
+    }
+    .tick-type-1 > p {
+        margin-bottom: 4px;
+        font-size: 11px;
+line-height: 18px;
+    } 
+    .tick-type-3 {
+        margin: 0 20px;
+    }
+    .tick-type-4 {
+        margin: 0 20px;
+        padding: 10px 12px;
+    }
+    .tick-type-3-bottom > div > input {
+        width: 100%;
+        height: 30px;}
+}

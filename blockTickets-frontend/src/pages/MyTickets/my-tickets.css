@@ -1,0 +1,285 @@
+.mytickets-top {
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resalePriceContainer {
+    position: relative;
+}
+.resalePrice {
+    background: #f15a22cf;
+    min-width: 44px;
+    right: 11px;
+    top: 10px;
+    position: absolute;
+    padding: 0px 10px;
+    color: white;
+    font-weight: 600;
+    width: auto;
+}
+.evt-bbtt-111 {
+    height: 50px !important;
+}
+.my-tickets {
+    position: absolute;
+    z-index: 10000;
+    left: 10vw;
+    top: 38vh;
+}
+.ticket-box-disable {
+    background: #949494cc !important;
+}
+.my-tickets > h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+    /* identical to box height, or 90% */
+
+    letter-spacing: 0.01em;
+
+    color: #ffffff;
+}
+.my-tickets > p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height, or 150% */
+
+    color: #ffffff;
+}
+.resale-button {
+    background: linear-gradient(90deg, #f7941d 5.93%, #f15a22 89.95%);
+    border: 1px solid #f15a22;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 3px 0px;
+}
+.resale-button > p {
+    font-size: 12px;
+}
+
+.claimNftFaq {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    color:#f15922b4;
+}
+.claimNftFaq:hover {
+    cursor:pointer;
+    color:#f15a22;
+}
+.event-ticket-box {
+    background-size: 100%;
+    margin: 20px 0;
+}
+.current-tickets {
+    min-height: 60vh;
+    margin: 80px 38px;
+}
+.current-tickets > h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    /* identical to box height, or 113% */
+    margin-bottom: 34px;
+    letter-spacing: 0.01em;
+
+    color: #0b3a6a;
+}
+.ticket-box-bottom {
+    padding: 0 21px ;
+}
+.past-tickets {
+    margin: 130px 38px !important;
+}
+.past-tickets > h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    /* identical to box height, or 113% */
+    margin-bottom: 40px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0b3a6a;
+}
+.no-tickets-error {
+    text-align: center;
+    font-size:22px;
+    line-height: 50px;
+}
+.no-tickets-error > a {
+    background: linear-gradient(90deg, #F7941D 5.93%, #F15A22 89.95%);
+border: 1px solid #F15A22;
+box-sizing: border-box;
+border-radius: 10px;
+color:white;
+padding:10px 20px;
+justify-content: center;
+margin-top:20px;
+text-decoration:none;
+}
+.no-tickets-error > a:hover {
+    cursor:pointer;
+    color:white;
+    opacity:0.8;
+}
+.past-ticket-disable {
+    background: #5b6570 !important;
+}
+.image-black {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.redirectBtn {
+    color: white;
+    margin-left:5px;
+    font-size: 10px;
+
+}
+.claimYourPackage {
+    color:white;
+    background-color:rgba(0, 0, 0, 0.921);
+
+    position: absolute;
+    top: 145px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 17px;
+    font-size: 12px;
+    width: 59%;
+}
+.claimYourPackage:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.redirectBtn:hover {
+    cursor: pointer;
+    animation:rotateRedirect 1s 1;
+}
+@keyframes rotateRedirect {
+    50% {transform: rotate(360deg);}
+  }
+.ticketBoxTopRight {
+    display: flex;
+    align-items: center;
+    
+}
+/* images */
+.hexa-yellow-1 {
+    position: absolute;
+}
+.hexa-blue-1 {
+    position: absolute;
+    left: 86vw;
+}
+.hexa-grey-1 {
+    position: absolute;
+    top: 120vh;
+}
+.hexa-yellow-2 {
+    top: 150vh;
+    left: 59vw;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+}
+.triangle-blue-1 {
+    position: absolute;
+    left: 86vw;
+    top: 160vh;
+}
+.hexa-orange-1 {
+    position: absolute;
+    left: 48vw;
+    top: 167vh;
+}
+.hexa-yellow-3 {
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: 47.5vw;
+    top: 165vh;
+    z-index: -1;
+}
+.triangle-blue-1 {
+    position: absolute;
+    left: 86vw;
+    top: 160vh;
+}
+.hexa-yellow-4 {
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: 88.5vw;
+    top: 281vh;
+    z-index: -1;
+}
+.hexa-orange-22 {
+    position: absolute;
+    top: 220vh;
+    left: 3vw;
+}
+@media only screen and (min-width: 1200px) {
+    .mytickets-top {
+        background-size: 100% !important;
+    }
+    .no-tickets-error {
+        text-align: center;
+        font-size:20px;
+    }
+}
+@media only screen and (max-width:570px) {
+    .evt-bbtt-111 {
+        height: 30px !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .my-tickets {
+        position: absolute;
+        z-index: 100000;
+        left: 10vw;
+        top: 24vh;
+    }
+    .current-tickets {
+        min-height: 60vh;
+        margin: 80px 0px;
+    }
+    .past-tickets {
+        margin: 130px 0px !important;
+    }
+    .no-tickets-error {
+        font-size:18px;
+    }
+    .resale-button > p {
+        font-size: 10px;
+    }
+
+    .claimYourPackage {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.921);
+        position: absolute;
+        top: 105px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 4px 17px;
+        font-size: 8px;
+        width: 99%;
+    }
+}

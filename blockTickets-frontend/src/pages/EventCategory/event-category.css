@@ -1,0 +1,120 @@
+.event-category-page {
+    min-height: 100vh;
+}
+
+.event-category-top {
+    /* background-image: url(../../images/Movies.svg); */
+    height: 510px;
+    width:100%;
+    margin-top: 80px;
+    background-size: 100%;
+    
+    position: relative;
+
+    /* min-height: 40vh; */
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.event-category {
+    background: #0b3a6a;
+    opacity: 0.9;
+    border-radius: 8px;
+    position: absolute;
+    top: 30%;
+    max-width: 50%;
+    padding: 20px 10px 10px 40px;
+    right: 10vw;
+}
+
+.event-category > h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 50px;
+    /* identical to box height, or 116% */
+    margin-bottom:33px;
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+}
+.event-category > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 34px;
+    /* or 162% */
+    margin-bottom:40px;
+    letter-spacing: 0.01em;
+
+    color: #f7f7f7;
+}
+.eventCategoryImageHeading {
+    /* margin-top:200px; */
+    padding:50px 0 0 20px;
+    font-size: 35px;
+    color: white;
+}
+.discoverBtn {
+    background: linear-gradient(90deg, #f7941d 5.93%, #f15a22 89.95%);
+    border: 1px solid #f15a22;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #FFFFFF;
+    width: 40%;
+}
+
+@media only screen and (max-width:992px) {
+    .event-category {
+        max-width:75%;
+    }
+    .event-category-top {
+        background-size:246%;
+        height:510px;
+        
+    }
+}
+
+@media only screen and (max-width:592px) {
+    .event-category {
+        max-width:90%;
+        right: 6%;
+        top: 31%;
+        padding:20px;
+    }
+    .event-category > h3 { 
+        font-size: 22px;
+        line-height: 12px;
+        margin-bottom:10px;
+    }
+    .event-category-top {
+        background-size:cover;
+        height: 200px;
+        min-height: 200px;
+    }
+    .discoverBtn {
+        width:100%;
+    }
+    .event-category > p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 0px;
+    }
+    .discoverBtn { 
+        padding:6px;
+        font-size: 16px;
+    }
+    /* .event-category-top {
+        background-size:346%;
+    } */
+    
+}

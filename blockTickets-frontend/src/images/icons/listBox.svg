@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="20px" viewBox="0 0 10 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>list box</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ticket-page" transform="translate(-1237.000000, -1469.000000)" fill="#FFFFFF" stroke="#979797">
+            <g id="Ticket-1-page">
+                <g id="Ticket-page">
+                    <g id="Ticket-types" transform="translate(288.000000, 607.000000)">
+                        <g id="VIP-ticket" transform="translate(924.000000, 200.000000)">
+                            <g id="ticket-conditions" transform="translate(25.000000, 359.000000)">
+                                <rect id="list-box" x="0.5" y="303.5" width="9" height="19"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

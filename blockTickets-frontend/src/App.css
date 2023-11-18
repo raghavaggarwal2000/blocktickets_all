@@ -1,0 +1,3 @@
+.search-input-container> input[type="search"]:focus{
+    border: 2px solid red;
+}

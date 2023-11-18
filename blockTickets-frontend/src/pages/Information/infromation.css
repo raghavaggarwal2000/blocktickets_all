@@ -1,0 +1,29 @@
+.informationPage {
+    min-height: fit-content;
+    margin-bottom: 30px;
+}
+.informationPage-container {
+    margin-top: 100px;
+}
+.aboutUsPage-container {
+    margin-top: 160px;
+}
+.aboutUsPage-container > h2 {
+    margin-bottom: 20px;
+    color: #0b3a6a;
+}
+.aboutUsPage-container > p {
+    margin-bottom: 40px;
+
+    text-align: justify;
+    font-size: 16px !important;
+    color: #5b6570;
+}
+.aboutUs-container {
+  color: #5b6570;
+}
+.informationPage-container > p {
+  text-align: justify;
+    font-size: 10px !important;
+    color: #5b6570;
+}

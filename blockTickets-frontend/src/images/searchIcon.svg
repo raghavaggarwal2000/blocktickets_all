@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>SEARCHICON</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M51.2739988,22.7620105 L56,27.7589275 L54.4466736,29 L49.7206724,24.003083 L51.2739988,22.7620105 Z M46.1745331,13 C49.5846335,13 52.3490661,15.5408403 52.3490661,18.6751257 C52.3490661,21.809411 49.5846335,24.3502514 46.1745331,24.3502514 C42.7644326,24.3502514 40,21.809411 40,18.6751257 C40,15.5408403 42.7644326,13 46.1745331,13 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page" transform="translate(-799.000000, -41.000000)" stroke="#979797">
+            <g id="HomePage1920">
+                <g>
+                    <g id="Header" transform="translate(288.000000, 20.000000)">
+                        <g id="Search-box" transform="translate(472.000000, 9.000000)">
+                            <g id="SEARCHICON">
+                                <path stroke-width="1" d="M51.2267741,23.4397351 L50.4574327,24.0544214 L54.4938983,28.3222755 L55.2632397,27.7075891 L51.2267741,23.4397351 Z M46.1745331,13.5 C43.0315991,13.5 40.5,15.8268388 40.5,18.6751257 C40.5,21.5234126 43.0315991,23.8502514 46.1745331,23.8502514 C49.317467,23.8502514 51.8490661,21.5234126 51.8490661,18.6751257 C51.8490661,15.8268388 49.317467,13.5 46.1745331,13.5 Z" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd"></path>
+                                <use stroke-width="2" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

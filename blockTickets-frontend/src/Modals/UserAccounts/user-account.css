@@ -1,0 +1,184 @@
+.user-account-modal {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: -0.045em;
+  color: #292930;
+  position: relative;
+  width: 380px !important;
+  border-radius: 8px !important;
+}
+.user-account-modal > h2 {
+  margin-bottom: 14px;
+  font-size: 27px !important;
+}
+.user-account-modal-sub {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #999fae;
+  margin-bottom: 20px;
+}
+.required-field {
+  color: red !important;
+}
+.visit-signup {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #0b3a6a;
+}
+.visit-signup > span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.modal-account-btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #0b3a6a;
+  background: #ffffff;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 75%;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* position: relative; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.modal-account-btn2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #0b3a6a;
+  background: #ffffff;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 75%;
+  margin-bottom: 20px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.modal-account-btn:hover,
+.modal-account-btn2:hover {
+  cursor: pointer !important;
+  border: 1px solid #0b3a6a;
+  opacity: 0.9;
+}
+
+.google {
+  height: 25px;
+  width: 27px;
+  /* left: 4px !important; */
+  margin-right: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .modal-account-btn > img {
+    position: absolute;
+    left: 10px;
+    
+} */
+.resend-otp {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  background-color: transparent;
+  outline: none;
+  border: 0px solid transparent;
+}
+.hoverIt {
+  color: orange;
+}
+.hoverIt:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.email {
+  height: 26px;
+  width: 26px;
+  /* left: 7px !important; */
+  margin-right: 10px;
+
+  /* position: absolute;
+    left: 10px; */
+}
+.facebook {
+  height: 17px;
+  margin: 0 12px 0 4px;
+}
+.phone {
+  height: 19px;
+  margin: 0 12px 0 8px;
+}
+.metamask {
+  height: 19px;
+  margin: 0 8px 0 8px;
+}
+.modal-a-HexaOrange {
+  position: absolute;
+  top: 8px;
+  left: 33%;
+  height: 22px;
+}
+.modal-a-starTrans {
+  position: absolute;
+  top: 25%;
+  right: 6%;
+  height: 15px;
+}
+.modal-a-triangle {
+  position: absolute;
+  top: 36%;
+  height: 13px;
+}
+.modal-a-hexaYellow {
+  position: absolute;
+  height: 64px;
+  left: 15%;
+  bottom: 8%;
+  z-index: -1;
+  transform: rotate(22deg);
+  opacity: 0.6;
+}
+.modal-a-hexaSmall {
+  position: absolute !important;
+  right: 7%;
+  bottom: 16%;
+}
+
+@media only screen and (max-width: 580px) {
+  .user-account-modal {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .user-account-modal {
+    width: 310px !important;
+  }
+}

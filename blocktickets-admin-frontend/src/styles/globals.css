@@ -1,0 +1,37 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-link {
+  padding: 0.6rem 1rem;
+  /* border: 1px solid #fa6400; */
+  /* background-color: rgba(250, 100, 0, 0.1); */
+}
+.page-item:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.page-item:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.page-link:hover {
+  color: #fa6400;
+}
+.page-item.active {
+  background-color: #fa6400;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.create_date_react {
+  position: fixed !important;
+  z-index: 10000 !important;
+}
+.react-daterange-picker {
+  background-color: rgb(36, 38, 45) !important;
+}
+.react-daterange-picker__wrapper {
+  border-radius: 4px !important;
+  padding: 4px !important;
+}

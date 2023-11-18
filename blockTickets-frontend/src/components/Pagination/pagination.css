@@ -1,0 +1,19 @@
+.page-link {
+  background-color:#5f738c9a !important;
+  color:white !important;
+}
+.page-link:hover {
+  cursor: pointer;
+  background-color:#5f738c !important;
+
+}
+.page-link-active {
+  border:2px solid #5f738c !important;
+  margin:0 !important ;
+  background-color:#5f738c !important;
+}
+.showingResult {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+}

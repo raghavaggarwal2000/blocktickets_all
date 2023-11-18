@@ -1,0 +1,191 @@
+.emailStyle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 430px;
+    background-color: white;
+    border: none;
+    outline: none;
+    box-shadow: 24px;
+    padding: 34px;
+    border-radius: 14px;
+}
+/* .PhoneInput {
+  margin-top:10px;
+} */
+.PhoneInput > input {
+    height: 50px;
+    /* Color/White */
+    background: #ffffff;
+    /* Stroke/Super-Light */
+    border: 1px solid #e3e6e9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0 72px 0 20px;
+}
+
+.name-icon {
+    position: relative;
+    top: 37px;
+    left: -67px;
+    
+}
+.name-icon img {
+    display: unset;
+}
+.mail-icon {
+    position: relative;
+    top: 37px;
+    left: -31px;
+}
+.mail-icon img {
+    display: unset;
+}
+.pass-icon {
+    position: relative;
+    top: 36px;
+    left: -54px;
+}
+.pass-icon img {
+    display: unset;
+}
+.pass-icon-2 {
+    position: relative;
+    top: 37px;
+    left: -112px;
+}
+.pass-icon-2 img {
+    display: unset;
+}
+.otp-input > div > div > input {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 4px !important;
+    border: 1px solid #e3e6e9 !important;
+    color: black !important;
+}
+.register-title {
+    text-align: center;
+}
+.email-login {
+    position: relative;
+}
+.email-login-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.success-message {
+    color: green;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.otp-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.otp-input div:first-child {
+    justify-content: center;
+}
+#recaptch-container {
+    display: flex !important;
+    justify-content: center !important;
+}
+.recaptcha > div > div {
+    display: flex !important;
+    justify-content: center !important;
+}
+.fgt-pass {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.025em;
+    float: right;
+    margin-right: 24px;
+    color: #0b3a6a;
+    opacity: 0.9;
+}
+.fgt-pass:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.submit-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+}
+.sub-sign-up {
+    width: 50%;
+    background: linear-gradient(90deg, #f7941d 5.93%, #f15a22 89.95%);
+    padding: 10px 0;
+}
+.sub-sign-up:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+.sign-up {
+    width: 50%;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #000000;
+}
+.sign-up:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+}
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+/* .s-in-input > .input-element {
+  margin-bottom: 14px;
+} */
+@media only screen and (max-width: 768px) {
+  .input-element {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .PhoneInput > input::placeholder{
+    font-size: 14px;
+  }
+    .emailStyle {
+        width: 80vw;
+        padding: 24px 20px;
+    }
+    .name-icon {
+        top: 30px;
+    }
+    .mail-icon {
+        top: 31px;
+    }
+    .pass-icon,
+    .pass-icon-2 {
+        top: 31px;
+    }
+    .PhoneInput > input {
+      height: 38px;
+    }
+}
+@media only screen and (max-width: 392px) {
+    .emailStyle {
+        width: 94vw;
+    }
+}

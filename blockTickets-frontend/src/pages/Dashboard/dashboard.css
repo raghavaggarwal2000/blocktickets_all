@@ -1,0 +1,22 @@
+.blue-to-red-gradient {
+    background-image: linear-gradient(to right bottom, #0849a6, #20429a, #2a3c8f, #303683, #333078, #42296f, #4d2165, #54195a, #63094a, #6c0039, #6f0026, #6d0414);
+}
+
+.aiImage {
+    bottom: 10px;
+    z-index: 10000;
+    right: 10px;
+}
+
+trimWord {
+    text-overflow: ellipsis
+}
+
+.vertical_dotted_line
+{
+    border-left: 1px dotted black;
+    height: 100%;
+} 
+.addBorder {
+    border-radius: 0.5rem !important;
+}

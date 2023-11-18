@@ -1,0 +1,9 @@
+export const GET_EVENTS = "GET_EVENTS";
+
+export const TICKET_EVENTS_DETAILS = "TICKET_EVENTS_DETAILS";
+
+export const NFT_MINT_INFO = "NFT_MINT_INFO";
+
+export const USER_TICKETS = "USER_TICKETS";
+
+export const CONNECT_WALLET = "CONNECT_WALLET";

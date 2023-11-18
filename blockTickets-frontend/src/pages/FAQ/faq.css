@@ -1,0 +1,15 @@
+.faq-section {
+    margin-top: 160px;
+}
+.faq-title {
+    font-size: 29px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.faqsCol > p {
+    text-align: justify;
+    color: #0000009c;
+    font-weight: 500;
+    line-height: 20px;
+}

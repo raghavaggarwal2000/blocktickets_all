@@ -1,0 +1,8 @@
+File from: [picture/img/6267df2732d3481bb1ab514dimage.jpg]
+
+File to: [build/img/6267df2732d3481bb1ab514dimage.jpg]
+
+Compression algorithm: [mozjpeg]
+
+Description: Error: Command failed: D:\JS\Projects\BlokTicket\v2-blockticket-backend\node_modules\mozjpeg\vendor\cjpeg.exe -quality 60 -outfile build/img/6267df2732d3481bb1ab514dimage.jpg picture/img/6267df2732d3481bb1ab514dimage.jpg
+Unrecognized input file format --- perhaps you need -targa

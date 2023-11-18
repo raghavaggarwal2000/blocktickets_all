@@ -1,0 +1,263 @@
+1) Edit the events and eventDetails schema, to remove unnessary keys from Events and add those on EventDetails Schema
+Code:
+  const events = await Events.find({})
+
+  for(let i = 0; i< events.length; ++i){
+    const obj = {
+      freeWifi: events[i]?.freeWifi,
+      valeParking: events[i]?.valeParking,
+      ageRequirement: events[i]?.ageRequirement,
+      dressCode: events[i]?.dressCode,
+      alcoholicDrink: events[i]?.alcoholicDrink,
+      foodAndBeverage: events[i]?.foodAndBeverage,
+    }
+    const eventDetails = EventDetails(obj);
+    const save = await eventDetails.save();
+    // console.log(save);
+    Events.findByIdAndUpdate(events[i]._id, 
+    {eventDetails: save._id},
+    {new:true})
+  }
+
+  await Events.updateMany({},{
+    $unset:{
+      freeWifi: "",
+      valeParking: "",
+      ageRequirement: "",
+      dressCode: "",
+      alcoholicDrink: "",
+      foodAndBeverage: "",
+    }
+  })
+ 
+ //to generate unique slug.
+  let uniqueSlug = []
+  const keep=[]
+  let event = await Event.find().select("eventTitle slug")
+  for(let i=0 ; i < event.length; i++){
+  
+    uniqueSlug.push(event[i].slug)
+  }
+  function uniqueCheck(value){
+                keep.includes(value) ? keep.push(slug(value + "-" + Math.random().toString(36).slice(2,6))) : keep.push(value)
+                }
+    const filtered = uniqueSlug.filter(uniqueCheck)
+  
+  for(let i=0; i < event.length; i++){
+    await Event.findByIdAndUpdate(event[i]._id, {slug : keep[i]}, {new : true})
+  }
+
+
+
+2) Edit the users and userDetails schema, to remove unnessary keys from User and add those on UserDetails Schema
+const data = await User.find({});
+
+  for(let i = 0; i< data.length; ++i){
+
+    const obj = {
+      bio: data[i]?.bio,
+      instagramLink: data[i]?.instagramLink,
+      twitterLink: data[i]?.twitterLink,
+      facebookLink: data[i]?.facebookLink,
+      dob: data[i]?.dob,
+      verifiedOn: data[i]?.verifiedOn,
+      gender: data[i]?.gender,
+      address: data[i]?.address,
+      landmark: data[i]?.landmark,
+      state: data[i]?.state,
+      city: data[i]?.city,
+      country: data[i]?.country,
+      pinCode: data[i]?.pcode
+    };
+
+    const details = UserDetails(obj);
+    const save = await details.save();
+
+    await User.findByIdAndUpdate(data[i]?._id,
+    {UserDetails: save._id},
+    {new:true})
+  }
+
+    await User.updateMany({},{
+    $unset:{
+      bio: "",
+      instagramLink: "",
+      twitterLink: "",
+      facebookLink: "",
+      dob: "",
+      verifiedOn: "",
+      gender: "",
+      address: "",
+      landmark: "",
+      state:"",
+      city: "",
+      country: "",
+      pcode: "",
+      yob: "",
+      bgPic: "",
+      userType: "",
+      username: "",
+      isAdmin: "",
+      identifier: "",
+      isVerifiedCreator: "",
+      should_reset: "",
+      facebook: "",
+      email_0: "",
+    }
+  })
+
+  const updateUser = await User.updateMany({},{
+    role:"Customer"
+  })
+  console.log(updateUser);
+
+  const admin = ["ajaypalblockchain@gmail.com", "vedica.dhawan@blocktickets.io"];
+  for(let i = 0; i< admin.length; ++i){
+    await User.findOneAndUpdate({email: admin[i]},{
+      $set: {
+        role: "Admin"
+      }
+    },
+    {new: true})
+  }
+
+  await User.deleteMany({phoneNumber: null})
+
+
+3) Delete keys from Users and Events(from the comment below) in the models files so that can make optimized result
+remove from users:
+yob
+bgPic
+userType
+username
+isAdmin
+identifier
+isVerifiedCreator
+should_reset
+facebook
+email_0
+
+
+
+4)
+
+TIcket:
+Rename user to User
+Remove fullyPaid keys
+Code:
+  await Ticket.updateMany({}, { $unset : {fullyPaid : ""}}) 
+
+
+5)
+TicketType:
+changes:
+fakePrice to strikeOffPrice
+price to displayPrice
+undiscountedPercentage to advancePercentage
+remove displayPrice, should_advanced(key from old database when importing)
+
+6)
+Orders:
+Remove uniqueId
+
+
+7)
+For unique phone number in the users schema do this:
+In users schema comment unique in phoneNumber and the code is:
+
+  const pipeline = [
+    {
+      '$group': {
+        '_id': '$phoneNumber', 
+        'counter': {
+          '$sum': 1
+        }
+      }
+    }, {
+      '$match': {
+        'counter': {
+          '$gt': 1
+        }
+      }
+    }
+  ];
+  const data = await User.aggregate(pipeline);
+  console.log(data);
+  
+  for(let i = 0;i < data.length; ++i){
+    if(data[i]._id === null){
+      continue;
+    }
+    const tempData = await User.find({phoneNumber: data[i]._id});
+    // console.log(tempData);
+    // console.log(tempData[0]);
+    for(let j =1;j<tempData.length; j++){
+      // console.log(tempData[j]._id);
+      const orders = await Orders.find({customerId: tempData[j]._id});
+      const nft = await Nft.find({showTo:tempData[j]._id});
+      const ticket = await Ticket.find({user: tempData[j]._id});
+      for(let k = 0;k< orders.length; ++k){
+        await Orders.findByIdAndUpdate(orders[k]._id,
+          {customerId: tempData[0]._id},
+          {new: true});
+      }
+      for(let k = 0; k<nft.length; ++k){
+        await Nft.findByIdAndUpdate(nft[k]._id,
+          {showTo: tempData[0]._id},
+          {new: true})
+      }
+      for(let k = 0;k <ticket.length; ++k){
+        await Ticket.findByIdAndUpdate(ticket[k]._id,
+          {user: tempData[0]._id},
+          {new: true})
+      }
+      await User.deleteOne({_id: tempData[j]._id})
+    }
+  }
+
+
+8)
+organiser:
+Rename:
+organizerName to organiserName 
+aboutOrganizer to aboutOrganiser
+
+Files which can be normally imported
+1 backing
+2 artist
+3 nft
+4 subscribeEmail
+
+
+
+
+//TIMEZONES AND TIMES
+References for timezones : https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+var indiaTime = new Date(new Date().toISOString()).toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+var china = new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"});
+
+var usTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
+
+var australia = new Date().toLocaleString("en-US", {timeZone: "Australia/Victoria"});
+
+console.log('India time: '+ (new Date(indiaTime)))
+console.log("US time", usTime)
+console.log("Australia:",(new Date(australia)))
+console.log("China:", (new Date(china)))
+
+
+
+
+====================================================================================================================
+PERSONAL NOTES
+  Admin dashboard
+  // JSON.parse(JSON.stringify(eventObj))
+    // generateslug(data?.eventTitle).then(  
+    //     (data) => {
+    //               Object.assign(eventObj, {"slug" : data})
+    //               console.log(eventObj)
+    // }
+    // ).catch(
+    //      (error) => {console.log(error)}
+    // )
