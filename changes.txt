@@ -1,0 +1,6 @@
+Changes in create event page(user side) and won't touch blockchain(the price will be base price only) 
+and while creating changes in ticketType schema as well
+
+CHanges in generation of on the spot (api and front)
+Changes in User purchasing of tickets (api and frontend)
+Changes in ticket updation (api)
